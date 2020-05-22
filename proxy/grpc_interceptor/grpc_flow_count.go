@@ -3,7 +3,7 @@ package grpc_interceptor
 import (
 	"context"
 	"fmt"
-	"github.com/e421083458/gateway_demo/proxy/public"
+	"github.com/haishenming/gateway_demo/proxy/public"
 	"google.golang.org/grpc"
 	"log"
 	"time"
@@ -35,4 +35,3 @@ func GrpcFlowCountStreamInterceptor(counter *public.FlowCountService) func(srv i
 		return err
 	}
 }
-

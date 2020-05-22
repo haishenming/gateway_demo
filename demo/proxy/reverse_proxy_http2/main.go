@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/e421083458/gateway_demo/demo/proxy/reverse_proxy_https/public"
-	"github.com/e421083458/gateway_demo/demo/proxy/reverse_proxy_https/testdata"
+	"github.com/haishenming/gateway_demo/demo/proxy/reverse_proxy_https/public"
+	"github.com/haishenming/gateway_demo/demo/proxy/reverse_proxy_https/testdata"
 	"golang.org/x/net/http2"
 	"log"
 	"net/http"
@@ -26,7 +26,7 @@ func main() {
 	mux.Handle("/", proxy)
 	server := &http.Server{
 		Addr:         addr,
-		WriteTimeout: time.Second * 3,            //设置3秒的写超时
+		WriteTimeout: time.Second * 3, //设置3秒的写超时
 		Handler:      mux,
 	}
 	http2.ConfigureServer(server, &http2.Server{})

@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/e421083458/gateway_demo/proxy/grpc_interceptor"
-	"github.com/e421083458/gateway_demo/proxy/load_balance"
-	proxy2 "github.com/e421083458/gateway_demo/proxy/proxy"
-	"github.com/e421083458/gateway_demo/proxy/public"
-	"github.com/e421083458/grpc-proxy/proxy"
+	"github.com/haishenming/gateway_demo/proxy/grpc_interceptor"
+	"github.com/haishenming/gateway_demo/proxy/load_balance"
+	proxy2 "github.com/haishenming/gateway_demo/proxy/proxy"
+	"github.com/haishenming/gateway_demo/proxy/public"
+	"github.com/haishenming/grpc-proxy/proxy"
 	"google.golang.org/grpc"
 	"log"
 	"net"
@@ -37,4 +37,3 @@ func main() {
 		log.Fatalf("failed to serve: %v", err)
 	}
 }
-

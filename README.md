@@ -24,42 +24,42 @@
 
 功能点| 源码地址
 ---|---
-熔断器| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/circuit_breaker)
-单机流量统计| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/flow_count)
-分布式流量统计| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/redis_flow_count)
-grpc反向代理| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/grpc_reverse_proxy)
-grpc反向代理整合中间件| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/grpc_reverse_proxy_advance)
-grpc反向代理整合负载均衡器| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/grpc_reverse_proxy_lb)
-grpc测试服务器、客户端、grpc-gateway| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/grpc_server_client)
-负载均衡器支持四种负载策略 | [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/load_balance)
-负载均衡之主动探测 | [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/load_balance_client_discovery)
-负载均衡之服务发现 | [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/load_balance_server_discovery)
-中间件实现| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/middleware)
-观察者模式| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/observer)
-限流器| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/rate_limiter)
-测试下游服务器| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/real_server)
-测试下游服务器+服务注册| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/real_server_register)
-浏览器正向代理| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/forward_proxy)
-http反向代理实现| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/reverse_proxy)
-http反向代理简单版| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/reverse_proxy_simple)
-http2反向代理| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/reverse_proxy_http2)
-https反向代理| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/reverse_proxy_https)
-http反向代理基本功能| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/reverse_proxy_base)
-http反向代理权限校验| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/security_check)
-tcp代理服务器实现| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/tcp_proxy)
-thrift服务器与客户端| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/thrift_server_client)
-websocket代理服务器| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/websocket)
-zookeeper基本使用| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/proxy/zookeeper)
+熔断器| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/circuit_breaker)
+单机流量统计| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/flow_count)
+分布式流量统计| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/redis_flow_count)
+grpc反向代理| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/grpc_reverse_proxy)
+grpc反向代理整合中间件| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/grpc_reverse_proxy_advance)
+grpc反向代理整合负载均衡器| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/grpc_reverse_proxy_lb)
+grpc测试服务器、客户端、grpc-gateway| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/grpc_server_client)
+负载均衡器支持四种负载策略 | [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/load_balance)
+负载均衡之主动探测 | [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/load_balance_client_discovery)
+负载均衡之服务发现 | [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/load_balance_server_discovery)
+中间件实现| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/middleware)
+观察者模式| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/observer)
+限流器| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/rate_limiter)
+测试下游服务器| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/real_server)
+测试下游服务器+服务注册| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/real_server_register)
+浏览器正向代理| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/forward_proxy)
+http反向代理实现| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/reverse_proxy)
+http反向代理简单版| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/reverse_proxy_simple)
+http2反向代理| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/reverse_proxy_http2)
+https反向代理| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/reverse_proxy_https)
+http反向代理基本功能| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/reverse_proxy_base)
+http反向代理权限校验| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/security_check)
+tcp代理服务器实现| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/tcp_proxy)
+thrift服务器与客户端| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/thrift_server_client)
+websocket代理服务器| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/websocket)
+zookeeper基本使用| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/proxy/zookeeper)
 ==基础功能==| ===基础功能===
-函数是一等公民| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/base/functional)
-http客户端| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/base/http_client)
-http服务端| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/base/http_server)
-tcp客户端| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/base/tcp_client)
-tcp代理| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/base/tcp_proxy)
-tcp服务器| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/base/tcp_server)
-udp客户端| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/base/udp_client)
-udp服务端| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/base/udp_server)
-tcp自定义协议获取完整报文| [源代码](https://github.com/e421083458/gateway_demo/tree/master/demo/base/unpack)
+函数是一等公民| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/base/functional)
+http客户端| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/base/http_client)
+http服务端| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/base/http_server)
+tcp客户端| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/base/tcp_client)
+tcp代理| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/base/tcp_proxy)
+tcp服务器| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/base/tcp_server)
+udp客户端| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/base/udp_client)
+udp服务端| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/base/udp_server)
+tcp自定义协议获取完整报文| [源代码](https://github.com/haishenming/gateway_demo/tree/master/demo/base/unpack)
 其他正在补充... | 其他正在补充...
 
 # Go 微服务网关代码使用说明
@@ -68,11 +68,11 @@ tcp自定义协议获取完整报文| [源代码](https://github.com/e421083458/
 
 大家可以下载、运行、测试、修改。如果你发现了任何bug，或者对课程中的任何内容有意见或建议，欢迎和我联系：）
 
-第1-8章节功能演示代码：https://github.com/e421083458/gateway_demo
+第1-8章节功能演示代码：https://github.com/haishenming/gateway_demo
 
-完整后端项目：https://github.com/e421083458/go_gateway
+完整后端项目：https://github.com/haishenming/go_gateway
 
-完整前端项目：https://github.com/e421083458/go_gateway_view
+完整前端项目：https://github.com/haishenming/go_gateway_view
 
 思维导图：[点击查看](http://naotu.baidu.com/file/0abcf68f3bd03964a63c8c35b44d681d?token=864a35c5e3647e34)
 
@@ -90,7 +90,7 @@ tcp自定义协议获取完整报文| [源代码](https://github.com/e421083458/
 
 - 首先git clone 本项目
 
-`git clone git@github.com:e421083458/gateway_demo.git`
+`git clone git@github.com:haishenming/gateway_demo.git`
 
 - 确保本地环境安装了Go 1.12+版本
 
@@ -114,7 +114,7 @@ go mod tidy
 
 - 首先git clone 本项目
 
-`git clone git@github.com:e421083458/go_gateway.git`
+`git clone git@github.com:haishenming/go_gateway.git`
 
 
 - 确保本地环境安装了Go 1.12+版本
@@ -160,7 +160,7 @@ go run main.go -config=./conf/dev/ -endpoint server
 - 首先git clone 本项目
 
 ```
-git clone git@github.com:e421083458/go_gateway_view.git
+git clone git@github.com:haishenming/go_gateway_view.git
 ```
 
 - 确保本地环境安装了nodejs
@@ -276,7 +276,7 @@ go 基础语法学习
 http://tour.studygolang.com/welcome/1
 
 10分钟学会go mod（类库管理器）使用
-https://blog.csdn.net/e421083458/article/details/89762113
+https://blog.csdn.net/haishenming/article/details/89762113
 
 goland 设置支持go mod
 https://blog.csdn.net/l7l1l0l/article/details/102491573

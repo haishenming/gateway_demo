@@ -2,8 +2,8 @@ package proxy
 
 import (
 	"context"
-	"github.com/e421083458/gateway_demo/proxy/load_balance"
-	"github.com/e421083458/grpc-proxy/proxy"
+	"github.com/haishenming/gateway_demo/proxy/load_balance"
+	"github.com/haishenming/grpc-proxy/proxy"
 	"google.golang.org/grpc"
 	"log"
 )

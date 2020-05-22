@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/e421083458/gateway_demo/proxy/load_balance"
-	"github.com/e421083458/gateway_demo/proxy/middleware"
-	proxy2 "github.com/e421083458/gateway_demo/proxy/proxy"
+	"github.com/haishenming/gateway_demo/proxy/load_balance"
+	"github.com/haishenming/gateway_demo/proxy/middleware"
+	proxy2 "github.com/haishenming/gateway_demo/proxy/proxy"
 	"log"
 	"net/http"
 )

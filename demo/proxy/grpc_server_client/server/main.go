@@ -5,7 +5,7 @@ import (
 	"context"
 	"flag"
 	"fmt"
-	pb "github.com/e421083458/gateway_demo/demo/proxy/grpc_server_client/proto"
+	pb "github.com/haishenming/gateway_demo/demo/proxy/grpc_server_client/proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 	"io"
@@ -16,7 +16,7 @@ import (
 var port = flag.Int("port", 50055, "the port to serve on")
 
 const (
-	streamingCount  = 10
+	streamingCount = 10
 )
 
 type server struct{}
@@ -77,7 +77,7 @@ func (s *server) UnaryEcho(ctx context.Context, in *pb.EchoRequest) (*pb.EchoRes
 	if !ok {
 		log.Println("miss metadata from context")
 	}
-	fmt.Println("md",md)
+	fmt.Println("md", md)
 	fmt.Printf("request received: %v, sending echo\n", in)
 	return &pb.EchoResponse{Message: in.Message}, nil
 }

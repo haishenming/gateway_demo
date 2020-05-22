@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"github.com/e421083458/gateway_demo/proxy/public"
+	"github.com/haishenming/gateway_demo/proxy/public"
 	"strings"
 )
 

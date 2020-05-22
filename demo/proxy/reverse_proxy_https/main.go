@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/e421083458/gateway_demo/demo/proxy/reverse_proxy_https/public"
-	"github.com/e421083458/gateway_demo/demo/proxy/reverse_proxy_https/testdata"
+	"github.com/haishenming/gateway_demo/demo/proxy/reverse_proxy_https/public"
+	"github.com/haishenming/gateway_demo/demo/proxy/reverse_proxy_https/testdata"
 	"log"
 	"net/http"
 	"net/url"

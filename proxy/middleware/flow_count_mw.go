@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"fmt"
-	"github.com/e421083458/gateway_demo/proxy/public"
+	"github.com/haishenming/gateway_demo/proxy/public"
 )
 
 func FlowCountMiddleWare(counter *public.FlowCountService) func(c *SliceRouterContext) {

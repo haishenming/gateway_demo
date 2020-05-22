@@ -3,10 +3,10 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/e421083458/gateway_demo/proxy/load_balance"
-	"github.com/e421083458/gateway_demo/proxy/proxy"
-	"github.com/e421083458/gateway_demo/proxy/tcp_middleware"
-	"github.com/e421083458/gateway_demo/proxy/tcp_proxy"
+	"github.com/haishenming/gateway_demo/proxy/load_balance"
+	"github.com/haishenming/gateway_demo/proxy/proxy"
+	"github.com/haishenming/gateway_demo/proxy/tcp_middleware"
+	"github.com/haishenming/gateway_demo/proxy/tcp_proxy"
 	"net"
 )
 
@@ -56,7 +56,7 @@ func main() {
 	//rb.Add("www.baidu.com:80", "40")
 
 	proxy := proxy.NewTcpLoadBalanceReverseProxy(&tcp_middleware.TcpSliceRouterContext{}, rb)
-	tcpServ := tcp_proxy.TcpServer{Addr: addr, Handler: proxy,}
+	tcpServ := tcp_proxy.TcpServer{Addr: addr, Handler: proxy}
 	fmt.Println("tcp_proxy start at:" + addr)
 	tcpServ.ListenAndServe()
 

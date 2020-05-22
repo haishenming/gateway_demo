@@ -3,11 +3,11 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/e421083458/gateway_demo/proxy/load_balance"
-	"github.com/e421083458/gateway_demo/proxy/proxy"
-	"github.com/e421083458/gateway_demo/proxy/public"
-	"github.com/e421083458/gateway_demo/proxy/tcp_middleware"
-	"github.com/e421083458/gateway_demo/proxy/tcp_proxy"
+	"github.com/haishenming/gateway_demo/proxy/load_balance"
+	"github.com/haishenming/gateway_demo/proxy/proxy"
+	"github.com/haishenming/gateway_demo/proxy/public"
+	"github.com/haishenming/gateway_demo/proxy/tcp_middleware"
+	"github.com/haishenming/gateway_demo/proxy/tcp_proxy"
 	"net"
 	"time"
 )
@@ -42,7 +42,7 @@ func main() {
 		}, router)
 
 	//启动服务
-	tcpServ := tcp_proxy.TcpServer{Addr: addr, Handler: routerHandler,}
+	tcpServ := tcp_proxy.TcpServer{Addr: addr, Handler: routerHandler}
 	fmt.Println("Starting tcp_proxy at " + addr)
 	tcpServ.ListenAndServe()
 }

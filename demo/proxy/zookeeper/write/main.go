@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/e421083458/gateway_demo/proxy/zookeeper"
+	"github.com/haishenming/gateway_demo/proxy/zookeeper"
 	"time"
 )
 

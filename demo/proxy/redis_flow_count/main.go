@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/e421083458/gateway_demo/proxy/middleware"
-	"github.com/e421083458/gateway_demo/proxy/proxy"
-	"github.com/e421083458/gateway_demo/proxy/public"
+	"github.com/haishenming/gateway_demo/proxy/middleware"
+	"github.com/haishenming/gateway_demo/proxy/proxy"
+	"github.com/haishenming/gateway_demo/proxy/public"
 	"log"
 	"net/http"
 	"net/url"
@@ -34,7 +34,7 @@ func main() {
 	public.ConfCricuitBreaker(true)
 	sliceRouter := middleware.NewSliceRouter()
 	redisCounter, _ := public.NewRedisFlowCountService("redis_app", time.Second)
-	sliceRouter.Group("/").Use(middleware.RedisFlowCountMiddleWare(redisCounter), )
+	sliceRouter.Group("/").Use(middleware.RedisFlowCountMiddleWare(redisCounter))
 	routerHandler := middleware.NewSliceRouterHandler(coreFunc, sliceRouter)
 	log.Fatal(http.ListenAndServe(addr, routerHandler))
 }

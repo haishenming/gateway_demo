@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/e421083458/gateway_demo/proxy/middleware"
-	"github.com/e421083458/gateway_demo/proxy/proxy"
-	"github.com/e421083458/gateway_demo/proxy/public"
+	"github.com/haishenming/gateway_demo/proxy/middleware"
+	"github.com/haishenming/gateway_demo/proxy/proxy"
+	"github.com/haishenming/gateway_demo/proxy/public"
 	"log"
 	"net/http"
 	"net/url"
@@ -34,7 +34,7 @@ func main() {
 	public.ConfCricuitBreaker(true)
 	sliceRouter := middleware.NewSliceRouter()
 	counter, _ := public.NewFlowCountService("local_app", time.Second)
-	sliceRouter.Group("/").Use(middleware.FlowCountMiddleWare(counter), )
+	sliceRouter.Group("/").Use(middleware.FlowCountMiddleWare(counter))
 	routerHandler := middleware.NewSliceRouterHandler(coreFunc, sliceRouter)
 	log.Fatal(http.ListenAndServe(addr, routerHandler))
 }

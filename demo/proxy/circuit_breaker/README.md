@@ -30,7 +30,7 @@ http://192.168.3.4:8080
 
 # 启动测试用例 
 
-- 跳转到以下目录，即：https://github.com/e421083458/gateway_demo/blob/master/demo/proxy/circuit_breaker/
+- 跳转到以下目录，即：https://github.com/haishenming/gateway_demo/blob/master/demo/proxy/circuit_breaker/
 ```
 $cd demo/proxy/circuit_breaker
 ```

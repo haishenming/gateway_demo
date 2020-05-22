@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/e421083458/gateway_demo/proxy/middleware"
-	"github.com/e421083458/gateway_demo/proxy/proxy"
+	"github.com/haishenming/gateway_demo/proxy/middleware"
+	"github.com/haishenming/gateway_demo/proxy/proxy"
 	"log"
 	"net/http"
 	"net/url"

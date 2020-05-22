@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/e421083458/gateway_demo/demo/proxy/reverse_proxy_https/testdata"
+	"github.com/haishenming/gateway_demo/demo/proxy/reverse_proxy_https/testdata"
 	"golang.org/x/net/http2"
 	"io"
 	"log"

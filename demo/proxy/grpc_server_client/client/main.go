@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	pb "github.com/e421083458/gateway_demo/demo/proxy/grpc_server_client/proto"
+	pb "github.com/haishenming/gateway_demo/demo/proxy/grpc_server_client/proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 )
@@ -20,7 +20,7 @@ var addr = flag.String("addr", "localhost:8402", "the address to connect to")
 const (
 	timestampFormat = time.StampNano // "Jan _2 15:04:05.000"
 	streamingCount  = 10
-	AccessToken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1ODk2OTExMTQsImlzcyI6ImFwcF9pZF9iIn0.qb2A_WsDP_-jfQBxJk6L57gTnAzZs-SPLMSS_UO6Gkc"
+	AccessToken     = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1ODk2OTExMTQsImlzcyI6ImFwcF9pZF9iIn0.qb2A_WsDP_-jfQBxJk6L57gTnAzZs-SPLMSS_UO6Gkc"
 )
 
 func unaryCallWithMetadata(c pb.EchoClient, message string) {

@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"context"
-	"github.com/e421083458/gateway_demo/proxy/tcp_proxy"
+	"github.com/haishenming/gateway_demo/proxy/tcp_proxy"
 	"net"
 )
 
@@ -34,7 +34,7 @@ type TcpSliceRouterContext struct {
 func newTcpSliceRouterContext(conn net.Conn, r *TcpSliceRouter, ctx context.Context) *TcpSliceRouterContext {
 	newTcpSliceGroup := &TcpSliceGroup{}
 	*newTcpSliceGroup = *r.groups[0] //浅拷贝数组指针
-	c := &TcpSliceRouterContext{conn: conn, TcpSliceGroup: newTcpSliceGroup, Ctx: ctx,}
+	c := &TcpSliceRouterContext{conn: conn, TcpSliceGroup: newTcpSliceGroup, Ctx: ctx}
 	c.Reset()
 	return c
 }

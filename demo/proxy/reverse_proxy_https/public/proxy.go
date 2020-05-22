@@ -4,7 +4,7 @@ import (
 	"crypto/tls"
 	"crypto/x509"
 	"fmt"
-	"github.com/e421083458/gateway_demo/demo/proxy/reverse_proxy_https/testdata"
+	"github.com/haishenming/gateway_demo/demo/proxy/reverse_proxy_https/testdata"
 	"golang.org/x/net/http2"
 	"io/ioutil"
 	"math/rand"
@@ -56,7 +56,7 @@ func NewMultipleHostsReverseProxy(targets []*url.URL) *httputil.ReverseProxy {
 		}
 	}
 	http2.ConfigureTransport(transport)
-	return &httputil.ReverseProxy{Director: director, Transport: transport,}
+	return &httputil.ReverseProxy{Director: director, Transport: transport}
 }
 
 func singleJoiningSlash(a, b string) string {

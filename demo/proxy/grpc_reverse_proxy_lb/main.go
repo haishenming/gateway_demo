@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/e421083458/gateway_demo/proxy/load_balance"
-	proxy2 "github.com/e421083458/gateway_demo/proxy/proxy"
-	"github.com/e421083458/grpc-proxy/proxy"
+	"github.com/haishenming/gateway_demo/proxy/load_balance"
+	proxy2 "github.com/haishenming/gateway_demo/proxy/proxy"
+	"github.com/haishenming/grpc-proxy/proxy"
 	"google.golang.org/grpc"
 	"log"
 	"net"
@@ -17,7 +17,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
 	}
-	
+
 	rb := load_balance.LoadBanlanceFactory(load_balance.LbWeightRoundRobin)
 	rb.Add("127.0.0.1:50055", "40")
 
